@@ -1,0 +1,2 @@
+export const downloadUrl = 'https://www.dropbox.com/s/xz38a5kz35xbce2/Bolters%20in%20the%20Dark%20Playbooks.pdf?dl=0'
+export const rulesUrl = 'https://docs.google.com/document/d/1q-MyQnKIj0SdaN6pxYZoR3mYxKItBHKgjpMPdr_5SWg/edit'
