@@ -1,0 +1,13 @@
+[{
+  "name": "Assault Marine",
+  "specials": [{
+    "name": "Not To Be Trifled With",
+    "description": "gain +1 Effect in close combat with a large group of enemies. Once per mission, you may push yourself in melee combat without marking Grace."
+  }]
+}, {
+  "name": "Apothecary",
+  "specials": [{
+    "name": "First Aid",
+    "description": "Survey a wounded Space Marine to temporarily reduce or ignore penalties from harm. On a 1-3 the target ignores level 1 harm; 4/5 ignore level 1 & 2 harm; 6 ignore all harm; on a Crit ignore all harm and fill in one segment of the target’s healing clock."
+  }]
+}]

@@ -1,9 +1,40 @@
+#logo {
+  padding-bottom: 20px;
+}
+
+#logo h1 {
+  font-family: 'EB Garamond', serif;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 52px;
+}
+
+#logo h1 span.cap {
+  font-size: 80px;
+}
+
+#logo span.inthe {
+  position: relative;
+  top: -37px;
+  font-size: 22px;
+  padding: 0 6px 0 12px;
+  text-align: center;
+  left: -2px;
+}
+
+#logo img {
+  position: absolute;
+  width: 90px;
+  top: 140px;
+  left: 276px;
+}
+
 .welcome {
   padding: 6em 0;
 }
 
 .welcome p {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .welcome h1 {

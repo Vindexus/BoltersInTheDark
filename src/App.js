@@ -6,6 +6,7 @@ import Home from "./components/Home"
 import Credits from "./components/Credits"
 import Downloads from "./components/Downloads"
 import Contact from "./components/Contact"
+import Classes from "./components/Classes"
 
 import './App.css'
 
@@ -26,6 +27,9 @@ const AppRouter = () => (
                 <Link to="/" className="nav-link">Home</Link>
               </li>
               <li className="nav-item">
+                <Link to="/classes" className="nav-link">Classes</Link>
+              </li>
+              <li className="nav-item">
                 <Link to="/credits" className="nav-link">Credits</Link>
               </li>
               <li className="nav-item">
@@ -42,6 +46,7 @@ const AppRouter = () => (
           <Route path="/credits" component={Credits} />
           <Route path="/downloads" component={Downloads} />
           <Route path="/contact" component={Contact} />
+          <Route path="/classes" component={Classes} />
         </div>
         <div id="footer">
         </div>

@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
 import './Home.css'
 
 import AquilaPauldron from '../img/aquila-pauldron.png'
 import SpaceMarine from '../img/space-marine.png'
 import HeavyBolter from '../img/heavy-bolter.png'
-
-import { rulesUrl } from '../config'
+import Bolter from '../img/bolter-white.png'
 
 export default class Home extends Component {
   componentWillMount () {
@@ -20,8 +19,11 @@ export default class Home extends Component {
         <div>
           <div class="row">
             <div className="col-md-6 offset-md-3 text-center welcome">
-              <h1>Bolters in the Dark</h1>
-              <p>Bolters in the Dark is an unofficial <a href="https://en.wikipedia.org/wiki/Warhammer_40,000" target="_blank">Warhammer 40,000</a> roleplaying game, based on the <a target="_blank" href="https://www.evilhat.com/home/blades-in-the-dark/">Blades in the Dark</a> system.</p>
+              <div id="logo">
+                <h1><span class="cap">B</span>olters <span class="inthe">in the</span> <span class="cap">D</span>ark</h1>
+                <img src={Bolter}></img>
+              </div>
+              <p>An unofficial <a href="https://en.wikipedia.org/wiki/Warhammer_40,000" target="_blank" rel="noopener noreferrer" i>Warhammer 40,000</a> roleplaying game <br />based on the <a target="_blank" href="https://bladesinthedark.com/licensing" rel="noopener noreferrer" i>Forged in the Dark</a> system.</p>
             </div>
           </div>
           <div class="row">
@@ -63,7 +65,7 @@ export default class Home extends Component {
                     <li>Printed out character sheets and a squad sheet</li>
                   </ul>
                   <div className="text-center pt-2">
-                    <Link to="/downloads" class="btn btn-secondary">Get the Downloads</Link>
+                    <a href="/downloads" className="btn btn-secondary">Get the Downloads</a>
                   </div>
                 </div>
               </div>
