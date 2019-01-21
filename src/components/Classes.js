@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './Classes.css'
 import data from '../game/classes.json'
 
 export default class Classes extends Component {
@@ -13,12 +13,13 @@ export default class Classes extends Component {
         return <li><strong>{spc.name}:</strong> {spc.description}</li>
       })
       return (
-        <div class="card mt-2">
+        <div class="card">
           <div className="card-body">
-            <div className="card-title"><h2>{cls.name}</h2></div>
             <div className="card-text">
+              <h2>{cls.name}</h2>
+              <p>{cls.summary}</p>
               <h3>Specialties</h3>
-              <ul>
+              <ul class="specialties">
                 {specials}
               </ul>
             </div>
@@ -35,7 +36,9 @@ export default class Classes extends Component {
             <p>Each player chooses on of the follow characters to play.</p>
           </div>
         </div>
-        {list}
+        <div class="classes">
+          {list}
+        </div>
       </div>
     )
   }

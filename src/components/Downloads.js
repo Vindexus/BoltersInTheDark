@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { downloadUrl } from '../config'
+import { downloadUrl, rulesUrl } from '../config'
 
 export default class Downloads extends Component {
   componentWillMount () {
@@ -15,7 +15,7 @@ export default class Downloads extends Component {
             <div className="card">
               <div className="card-body">
                 <h2 className="card-title">Rules</h2>
-                <a href={downloadUrl} className="btn btn-secondary">Google Docs Rules</a>
+                <a href={rulesUrl} className="btn btn-secondary">Google Docs Rules</a>
               </div>
             </div>
           </div>

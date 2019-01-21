@@ -6,7 +6,8 @@ import './Home.css'
 import AquilaPauldron from '../img/aquila-pauldron.png'
 import SpaceMarine from '../img/space-marine.png'
 import HeavyBolter from '../img/heavy-bolter.png'
-import Bolter from '../img/bolter-white.png'
+import Logo from '../img/logo-600.png'
+import Suffer from '../img/suffernotthealien.png'
 
 export default class Home extends Component {
   componentWillMount () {
@@ -18,12 +19,14 @@ export default class Home extends Component {
       <div>
         <div>
           <div class="row">
-            <div className="col-md-6 offset-md-3 text-center welcome">
-              <div id="logo">
-                <h1><span class="cap">B</span>olters <span class="inthe">in the</span> <span class="cap">D</span>ark</h1>
-                <img src={Bolter}></img>
+            <div className="col-sm 12 text-center welcome">
+              <div id="branding">
+                <img class="logo" src={Logo} alt="Bolters in the Dark Logo"></img>
+                <img class="suffer" src={Suffer} alt="Suffer Not The Alien To Live"></img>
               </div>
-              <p>An unofficial <a href="https://en.wikipedia.org/wiki/Warhammer_40,000" target="_blank" rel="noopener noreferrer" i>Warhammer 40,000</a> roleplaying game <br />based on the <a target="_blank" href="https://bladesinthedark.com/licensing" rel="noopener noreferrer" i>Forged in the Dark</a> system.</p>
+              <div class="tagline col-md-6 offset-md-3">
+                <p>An unofficial <a href="https://en.wikipedia.org/wiki/Warhammer_40,000" target="_blank" rel="noopener noreferrer" i>Warhammer 40,000</a> roleplaying game <br />based on the <a target="_blank" href="https://bladesinthedark.com/licensing" rel="noopener noreferrer" i>Forged in the Dark</a> system.</p>
+              </div>
             </div>
           </div>
           <div class="row">
@@ -65,7 +68,7 @@ export default class Home extends Component {
                     <li>Printed out character sheets and a squad sheet</li>
                   </ul>
                   <div className="text-center pt-2">
-                    <a href="/downloads" className="btn btn-secondary">Get the Downloads</a>
+                    <Link to="/downloads" className="btn btn-secondary"><span>Get the Downloads</span></Link>
                   </div>
                 </div>
               </div>
